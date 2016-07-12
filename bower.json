@@ -1,6 +1,16 @@
 {
   "name": "icometrix-style-guide",
-  "dependencies": {
+  "devDependencies": {
     "bootstrap": "3.3.6"
-  }
+  },
+  "homepage": "https://github.com/thinkerit/icometrix-style-guide",
+  "description": "Official style guide for Icometrix, Imaging Biomarker Experts",
+  "main": "dist/css/style.css",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
