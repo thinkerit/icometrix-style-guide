@@ -1,0 +1,6 @@
+{
+  "name": "icometrix-style-guide",
+  "dependencies": {
+    "bootstrap": "3.3.6"
+  }
+}

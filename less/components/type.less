@@ -1,0 +1,37 @@
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  small {
+    font-size: 50%;
+    line-height: inherit;
+  }
+}
+
+time {
+  color: @brand-primary;
+  font-size: @font-size-small;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media (min-width: @screen-sm-min) {
+  h1 {
+    font-size: floor(@font-size-h1 * 1.5);
+  }
+}
+
+@media (min-width: @screen-md-min) {
+  h1 {
+    font-size: floor(@font-size-h1 * 1.7);
+  }
+}
+
+@media (min-width: @screen-lg-min) {
+  h1 {
+    font-size: floor(@font-size-h1 * 1.8);
+  }
+
+  h2 {
+    font-size: floor(@font-size-h2 * 1.2);
+  }
+}

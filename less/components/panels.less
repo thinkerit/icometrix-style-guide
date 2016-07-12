@@ -1,0 +1,90 @@
+.panel {
+  @default-panel-transition-options: ease-in-out 1s;
+
+  position: relative;
+  overflow: hidden;
+  box-shadow: none;
+  transition: box-shadow @default-panel-transition-options;
+
+   > a {
+    text-decoration: none;
+  }
+
+  .panel-background {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background-size: cover;
+    background-position: center;
+    transition: transform @default-panel-transition-options, filter @default-panel-transition-options;
+  }
+
+  &.panel-hover {
+    .panel-body {
+      transform: scale(1.05);
+    }
+
+    &:hover {
+      box-shadow: @box-shadow-inset-light;
+
+      .panel-background {
+        transform: scale3d(1.2,1.2,1.2);
+        filter: blur(1.5px);
+      }
+
+      .panel-body {
+        transform: scale(1);
+      }
+
+      .panel-footer {
+        background: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+
+  .panel-link-overlay {
+    display: block;
+    background: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: background @default-transition-options;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .panel-title {
+    margin: 0;
+    color: @ico-blue;
+  }
+
+  .panel-body {
+    min-height: 200px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    position: relative;
+    color: @text-color;
+    font-size: @font-size-small;
+    transition: transform @default-panel-transition-options, background @default-panel-transition-options, opacity @default-panel-transition-options;
+  }
+
+  .panel-footer {
+    position: relative;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    transition: background @default-panel-transition-options;
+  }
+
+  @media (min-width: @screen-lg-min) {
+    .panel-body {
+      min-height: 250px;
+    }
+  }
+}

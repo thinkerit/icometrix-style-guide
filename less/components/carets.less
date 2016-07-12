@@ -1,0 +1,37 @@
+.caret-left, .caret-right {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+
+  &:before {
+    content: '';
+    display: block;
+    border-color: transparent @ico-blue;
+    border-style: solid;
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 7px;
+    left: 0;
+  }
+}
+
+.caret-right {
+  &:before {
+    border-width: 6px 0 6px 10px;
+  }
+}
+
+.caret-left {
+  &:before {
+    border-width: 6px 10px 6px 0;
+  }
+}
+
+@media (min-width: @screen-lg-min) {
+  .caret-left, .caret-right {
+    &:before {
+      top: 10px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.btn {
+  transition: @btn-transition;
+  letter-spacing: 1.5px;
+}
+
+.btn-default {
+  &:hover {
+    background: @btn-default-hover-bg;
+  }
+}
+
+.btn-primary {
+  background: darken(@ico-green, 2%);
+  border: none;
+  box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.35), inset 1px -1px 0 rgba(0, 0, 0, 0.5);
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:active:hover,
+  &:active:focus {
+    background: @btn-primary-hover-bg;
+  }
+}
