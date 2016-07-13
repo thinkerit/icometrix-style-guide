@@ -3,3 +3,59 @@ input, textarea, select {
     -webkit-text-fill-color: @text-color;
   }
 }
+
+.form-filters {
+  margin-bottom: @padding-section-xs;
+
+  .btn {
+    margin: 0 10px 10px 0;
+  }
+
+  .form-filter-search {
+    margin-top: 10px;
+  }
+
+  .form-control {
+    background-color: @input-bg-dark;
+    color: @text-color-light;
+    .placeholder(@text-color-light);
+  }
+
+  @media (min-width: @screen-sm-min) {
+    .form-filter-search {
+      margin-top: 0;
+    }
+  }
+}
+
+.page-light {
+  .form-filters {
+    .btn {
+      color: @btn-default-color-dark;
+
+      &:hover {
+        background: @btn-default-hover-bg-dark;
+      }
+    }
+  }
+}
+
+.section-light {
+  .form-control {
+    color: @text-color;
+    .placeholder(@text-color);
+  }
+}
+
+.section-dark {
+  .form-control {
+    color: @text-color-light;
+    .placeholder(@text-color-light);
+  }
+
+  select.form-control {
+    option {
+      background-color: tint(@ico-blue, 30%);
+    }
+  }
+}

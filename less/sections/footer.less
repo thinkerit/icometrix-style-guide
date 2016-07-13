@@ -1,0 +1,27 @@
+footer {
+  padding: 8px 0;
+  background: @ico-blue-gradient;
+  color: @text-color-light;
+  text-align: center;
+  font-size: 14px;
+
+  a {
+    color: @text-color-light;
+
+    &:hover,
+    &:focus {
+      color: @gray-lighter;
+      text-decoration: none;
+    }
+  }
+
+  @media (min-width: @screen-sm-min) {
+    .footer-left {
+      text-align: left;
+    }
+
+    .footer-right {
+      text-align: right;
+    }
+  }
+}

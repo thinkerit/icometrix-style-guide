@@ -14,6 +14,28 @@ time {
   text-transform: uppercase;
 }
 
+.page-dark {
+  h1,h2,h3,h4,h5,h6 {
+    color: @text-color-light;
+  }
+}
+.page-light {
+  h1,h2,h3,h4,h5,h6 {
+    color: @headings-color;
+  }
+}
+
+.section-dark {
+  h1,h2,h3,h4,h5,h6 {
+    color: @text-color-light;
+  }
+}
+.section-light {
+  h1,h2,h3,h4,h5,h6 {
+    color: @headings-color;
+  }
+}
+
 @media (min-width: @screen-sm-min) {
   h1 {
     font-size: floor(@font-size-h1 * 1.5);
