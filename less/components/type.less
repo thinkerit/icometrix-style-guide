@@ -19,6 +19,7 @@ time {
     color: @text-color-light;
   }
 }
+
 .page-light {
   h1,h2,h3,h4,h5,h6 {
     color: @headings-color;
@@ -29,7 +30,16 @@ time {
   h1,h2,h3,h4,h5,h6 {
     color: @text-color-light;
   }
+
+  a:not(.btn) {
+    color: @ico-green-light;
+
+    &:hover {
+      color: @ico-green;
+    }
+  }
 }
+
 .section-light {
   h1,h2,h3,h4,h5,h6 {
     color: @headings-color;
