@@ -59,3 +59,11 @@ input, textarea, select {
     }
   }
 }
+
+@media (min-width: @screen-lg-min) {
+  .has-feedback {
+    label ~ .form-control-feedback {
+      top: 36px;
+    }
+  }
+}
