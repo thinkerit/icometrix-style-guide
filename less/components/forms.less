@@ -28,6 +28,36 @@ input, textarea, select {
   }
 }
 
+form {
+  label + .help-block {
+    margin-top: 0;
+    font-size: @font-size-small;
+    color: @gray-lighter !important;
+  }
+
+  .form-group {
+    &.has-success {
+      .form-control {
+        border-color: @ico-green-light;
+      }
+
+      .form-control-feedback {
+        color: @ico-green-light;
+      }
+    }
+
+    &.has-error {
+      .form-control {
+        border-color: @ico-red-light;
+      }
+
+      .form-control-feedback {
+        color: @ico-red-light;
+      }
+    }
+  }
+}
+
 .page-light {
   .form-filters {
     .btn {
@@ -44,6 +74,14 @@ input, textarea, select {
   .form-control {
     color: @text-color;
     .placeholder(@text-color);
+  }
+
+  form {
+    .form-group {
+      .help-block {
+        color: @text-color;
+      }
+    }
   }
 }
 
